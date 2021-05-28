@@ -1,0 +1,13 @@
+.formConteiner {
+  margin-top: 10px;
+}
+.form {
+  margin: auto;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 20px;
+  width: 400px;
+}
+.LoginButton {
+  width: 100%;
+  background-color: rgb(224, 224, 221);
+}

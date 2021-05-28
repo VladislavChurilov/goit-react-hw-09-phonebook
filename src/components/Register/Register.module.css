@@ -1,0 +1,10 @@
+.form {
+  border: 1px solid rgb(230, 230, 230);
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+.LoginButton {
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+.HeadPageConteiner {
+  margin: auto;
+  margin-top: 40px;
+  width: 400px;
+  border: 1px solid rgb(230, 230, 230);
+  box-shadow: antiquewhite;
+}
+.HeadPage {
+  display: flex;
+  justify-content: center;
+}
+.HeadingText {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}

@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  margin-top: 10px;
+}
+.FormControl {
+  display: flex;
+  width: 100%;
+}
+.inputFilter {
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  width: 1570px;
+  height: 750px;
+  justify-content: center;
+
+  background-image: url('https://images.pexels.com/photos/6373289/pexels-photo-6373289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+}

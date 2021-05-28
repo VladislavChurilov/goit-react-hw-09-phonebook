@@ -1,0 +1,42 @@
+.phonebook {
+  width: 600px;
+  padding: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.Contacts {
+  text-decoration: none;
+  font-weight: 600;
+}
+.activeLink {
+  color: rgb(180, 70, 6);
+}
+.UserMenu {
+  display: flex;
+  align-items: center;
+}
+.UserText {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.AuthNavConteiner {
+  display: flex;
+  justify-content: space-around;
+  width: 180px;
+}
+.AuthNav {
+  text-decoration: none;
+}
+.titleHead {
+  font-size: 24px;
+  margin: 10px;
+  text-decoration: none;
+}
