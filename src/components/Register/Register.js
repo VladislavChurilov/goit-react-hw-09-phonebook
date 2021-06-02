@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../../redux/auth';
 import style from './Register.module.css';
@@ -19,7 +19,7 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleChange = useCallback(e => {
+  const handleChange = e => {
     const { name, value } = e.currentTarget;
     switch (name) {
       case 'name':
@@ -34,16 +34,13 @@ export default function Register() {
       default:
         console.warn(`error`);
     }
-  }, []);
-  const handleSubmit = useCallback(
-    e => {
-      e.preventDefault();
-      dispatch(authOperations.register({ name, email, password }));
-      setEmail('');
-      setPassword('');
-    },
-    [name, email, password, dispatch],
-  );
+  };
+  const handleSubmit = e => {
+    e.preventDefault();
+    dispatch(authOperations.register({ name, email, password }));
+    setEmail('');
+    setPassword('');
+  };
   return (
     <form className={style.form} onSubmit={handleSubmit} autoComplete="off">
       <FormControl style={styles.FormControl}>

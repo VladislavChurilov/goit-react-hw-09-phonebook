@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+// import { useCallback, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { authSelectors, authOperations } from '../../redux/auth';
 import { Button } from '@material-ui/core';
@@ -10,9 +10,9 @@ export default function UserMenu() {
   const avatar =
     'https://cdn.pixabay.com/photo/2013/07/13/12/16/horse-159512_960_720.png';
 
-  const onLogOut = useCallback(() => {
+  const onLogOut = () => {
     dispatch(authOperations.logOut());
-  }, [dispatch]);
+  };
   return (
     <div className={styles.UserMenu}>
       <img src={avatar} alt="" width="32" height="32" />

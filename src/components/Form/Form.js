@@ -35,15 +35,12 @@ export default function Form() {
     }
   }, []);
 
-  const handleSubmit = useCallback(
-    e => {
-      e.preventDefault();
-      dispatch(operations.addContact({ name, number }));
-      setName('');
-      setNumber('');
-    },
-    [name, number, dispatch],
-  );
+  const handleSubmit = e => {
+    e.preventDefault();
+    dispatch(operations.addContact({ name, number }));
+    setName('');
+    setNumber('');
+  };
 
   return (
     <div className={style.formConteiner}>
